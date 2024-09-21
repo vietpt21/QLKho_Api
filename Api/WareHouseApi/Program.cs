@@ -15,7 +15,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("CodePulseConnectionString"));
 });
-builder.Services.AddScoped<IKhoRepository, KhoRepository>();
+builder.Services.AddScoped<IUnitWork, UnitWork>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

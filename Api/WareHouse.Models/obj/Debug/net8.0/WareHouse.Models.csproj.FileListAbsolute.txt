@@ -1,0 +1,12 @@
+C:\Users\VIETPT\Desktop\New folder\QLKho_Api\Api\WareHouse.Models\bin\Debug\net8.0\WareHouse.Models.deps.json
+C:\Users\VIETPT\Desktop\New folder\QLKho_Api\Api\WareHouse.Models\bin\Debug\net8.0\WareHouse.Models.dll
+C:\Users\VIETPT\Desktop\New folder\QLKho_Api\Api\WareHouse.Models\bin\Debug\net8.0\WareHouse.Models.pdb
+C:\Users\VIETPT\Desktop\New folder\QLKho_Api\Api\WareHouse.Models\obj\Debug\net8.0\WareHouse.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VIETPT\Desktop\New folder\QLKho_Api\Api\WareHouse.Models\obj\Debug\net8.0\WareHouse.Models.AssemblyInfoInputs.cache
+C:\Users\VIETPT\Desktop\New folder\QLKho_Api\Api\WareHouse.Models\obj\Debug\net8.0\WareHouse.Models.AssemblyInfo.cs
+C:\Users\VIETPT\Desktop\New folder\QLKho_Api\Api\WareHouse.Models\obj\Debug\net8.0\WareHouse.Models.csproj.CoreCompileInputs.cache
+C:\Users\VIETPT\Desktop\New folder\QLKho_Api\Api\WareHouse.Models\obj\Debug\net8.0\WareHouse.Models.sourcelink.json
+C:\Users\VIETPT\Desktop\New folder\QLKho_Api\Api\WareHouse.Models\obj\Debug\net8.0\WareHouse.Models.dll
+C:\Users\VIETPT\Desktop\New folder\QLKho_Api\Api\WareHouse.Models\obj\Debug\net8.0\refint\WareHouse.Models.dll
+C:\Users\VIETPT\Desktop\New folder\QLKho_Api\Api\WareHouse.Models\obj\Debug\net8.0\WareHouse.Models.pdb
+C:\Users\VIETPT\Desktop\New folder\QLKho_Api\Api\WareHouse.Models\obj\Debug\net8.0\ref\WareHouse.Models.dll

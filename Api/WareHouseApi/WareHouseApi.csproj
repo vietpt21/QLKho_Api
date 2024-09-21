@@ -20,4 +20,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WareHouse.Data\WareHouse.Data.csproj" />
+    <ProjectReference Include="..\WareHouse.Models\WareHouse.Models.csproj" />
+  </ItemGroup>
+
 </Project>

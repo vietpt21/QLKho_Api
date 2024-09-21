@@ -1,30 +1,51 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\VIETPT\\Desktop\\QLKho_Api\\Api\\WareHouseApi\\",
+  "WorkspaceRootPath": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouseApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|c:\\users\\vietpt\\desktop\\qlkho_api\\api\\warehouseapi\\reponsitories\\interface\\khorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|solutionrelative:reponsitories\\interface\\khorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81FAC2D5-D9AC-455C-88EA-75A3A28BB897}|..\\WareHouse.Models\\WareHouse.Models.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.models\\dto\\sanphamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|c:\\users\\vietpt\\desktop\\qlkho_api\\api\\warehouseapi\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81FAC2D5-D9AC-455C-88EA-75A3A28BB897}|..\\WareHouse.Models\\WareHouse.Models.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.models\\domain\\sanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|c:\\users\\vietpt\\desktop\\qlkho_api\\api\\warehouseapi\\reponsitories\\implements\\ikhorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|solutionrelative:reponsitories\\implements\\ikhorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1FCE8804-2AE6-4F08-90DC-84A3CFCEF7CD}|..\\WareHouse.Data\\WareHouse.Data.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.data\\reponsitories\\interface\\sanphamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|c:\\users\\vietpt\\desktop\\qlkho_api\\api\\warehouseapi\\data\\khocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|solutionrelative:data\\khocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouseapi\\controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|solutionrelative:controllers\\sanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|c:\\users\\vietpt\\desktop\\qlkho_api\\api\\warehouseapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{81FAC2D5-D9AC-455C-88EA-75A3A28BB897}|..\\WareHouse.Models\\WareHouse.Models.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.models\\dto\\sanphamrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|c:\\users\\vietpt\\desktop\\qlkho_api\\api\\warehouseapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouseapi\\controllers\\nhomsanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|solutionrelative:controllers\\nhomsanphamcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FCE8804-2AE6-4F08-90DC-84A3CFCEF7CD}|..\\WareHouse.Data\\WareHouse.Data.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.data\\reponsitories\\implements\\iunitwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FCE8804-2AE6-4F08-90DC-84A3CFCEF7CD}|..\\WareHouse.Data\\WareHouse.Data.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.data\\reponsitories\\interface\\unitwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81FAC2D5-D9AC-455C-88EA-75A3A28BB897}|..\\WareHouse.Models\\WareHouse.Models.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.models\\dto\\nhomsanphamrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FCE8804-2AE6-4F08-90DC-84A3CFCEF7CD}|..\\WareHouse.Data\\WareHouse.Data.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.data\\reponsitories\\interface\\nhomsanphamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81FAC2D5-D9AC-455C-88EA-75A3A28BB897}|..\\WareHouse.Models\\WareHouse.Models.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.models\\dto\\nhomsanphamdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouseapi\\controllers\\khocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|solutionrelative:controllers\\khocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FCE8804-2AE6-4F08-90DC-84A3CFCEF7CD}|..\\WareHouse.Data\\WareHouse.Data.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.data\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FCE8804-2AE6-4F08-90DC-84A3CFCEF7CD}|..\\WareHouse.Data\\WareHouse.Data.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.data\\reponsitories\\implements\\inhomsanphamrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,76 +59,184 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKho_Api\\Api\\WareHouseApi\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKho_Api\\Api\\WareHouseApi\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-19T08:21:00.952Z"
+              "DocumentIndex": 2,
+              "Title": "SanPhamRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Interface\\SanPhamRepository.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Data\\Reponsitories\\Interface\\SanPhamRepository.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Interface\\SanPhamRepository.cs",
+              "RelativeToolTip": "..\\WareHouse.Data\\Reponsitories\\Interface\\SanPhamRepository.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAgwEcAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:55:26.723Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKho_Api\\Api\\WareHouseApi\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKho_Api\\Api\\WareHouseApi\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAABdAAAA",
+              "DocumentIndex": 4,
+              "Title": "SanPhamRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\DTO\\SanPhamRequestDto.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Models\\DTO\\SanPhamRequestDto.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\DTO\\SanPhamRequestDto.cs",
+              "RelativeToolTip": "..\\WareHouse.Models\\DTO\\SanPhamRequestDto.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAwAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T08:20:56.165Z"
+              "WhenOpened": "2024-09-21T03:53:06.103Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "KhoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKho_Api\\Api\\WareHouseApi\\Reponsitories\\Interface\\KhoRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\Interface\\KhoRepository.cs",
-              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKho_Api\\Api\\WareHouseApi\\Reponsitories\\Interface\\KhoRepository.cs",
-              "RelativeToolTip": "Reponsitories\\Interface\\KhoRepository.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAAwCkAAAAIAAAA",
+              "Title": "SanPhamDto.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\DTO\\SanPhamDto.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Models\\DTO\\SanPhamDto.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\DTO\\SanPhamDto.cs",
+              "RelativeToolTip": "..\\WareHouse.Models\\DTO\\SanPhamDto.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAUwCMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T08:18:48.733Z",
+              "WhenOpened": "2024-09-21T03:52:15.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SanPham.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\Domain\\SanPham.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Models\\Domain\\SanPham.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\Domain\\SanPham.cs",
+              "RelativeToolTip": "..\\WareHouse.Models\\Domain\\SanPham.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBoAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:50:45.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IUnitWork.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Implements\\IUnitWork.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Data\\Reponsitories\\Implements\\IUnitWork.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Implements\\IUnitWork.cs",
+              "RelativeToolTip": "..\\WareHouse.Data\\Reponsitories\\Implements\\IUnitWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:49:29.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UnitWork.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Interface\\UnitWork.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Data\\Reponsitories\\Interface\\UnitWork.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Interface\\UnitWork.cs",
+              "RelativeToolTip": "..\\WareHouse.Data\\Reponsitories\\Interface\\UnitWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:48:16.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NhomSanPhamRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\DTO\\NhomSanPhamRequestDto.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Models\\DTO\\NhomSanPhamRequestDto.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\DTO\\NhomSanPhamRequestDto.cs",
+              "RelativeToolTip": "..\\WareHouse.Models\\DTO\\NhomSanPhamRequestDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:46:22.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NhomSanPhamDto.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\DTO\\NhomSanPhamDto.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Models\\DTO\\NhomSanPhamDto.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\DTO\\NhomSanPhamDto.cs",
+              "RelativeToolTip": "..\\WareHouse.Models\\DTO\\NhomSanPhamDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:42:58.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Data\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\WareHouse.Data\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:40:48.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NhomSanPhamRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Interface\\NhomSanPhamRepository.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Data\\Reponsitories\\Interface\\NhomSanPhamRepository.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Interface\\NhomSanPhamRepository.cs",
+              "RelativeToolTip": "..\\WareHouse.Data\\Reponsitories\\Interface\\NhomSanPhamRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwDwAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:39:37.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "INhomSanPhamRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Implements\\INhomSanPhamRepository.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Data\\Reponsitories\\Implements\\INhomSanPhamRepository.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Implements\\INhomSanPhamRepository.cs",
+              "RelativeToolTip": "..\\WareHouse.Data\\Reponsitories\\Implements\\INhomSanPhamRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:38:14.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NhomSanPhamController.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouseApi\\Controllers\\NhomSanPhamController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NhomSanPhamController.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouseApi\\Controllers\\NhomSanPhamController.cs",
+              "RelativeToolTip": "Controllers\\NhomSanPhamController.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAcwCEAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:37:27.186Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "SanPhamController.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouseApi\\Controllers\\SanPhamController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SanPhamController.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouseApi\\Controllers\\SanPhamController.cs",
+              "RelativeToolTip": "Controllers\\SanPhamController.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBYAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T03:34:53.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "KhoController.cs",
-              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKho_Api\\Api\\WareHouseApi\\Data\\KhoController.cs",
-              "RelativeDocumentMoniker": "Data\\KhoController.cs",
-              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKho_Api\\Api\\WareHouseApi\\Data\\KhoController.cs",
-              "RelativeToolTip": "Data\\KhoController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAAwBQAAAAIAAAA",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouseApi\\Controllers\\KhoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\KhoController.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouseApi\\Controllers\\KhoController.cs",
+              "RelativeToolTip": "Controllers\\KhoController.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAIwEQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T08:17:24.417Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IKhoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKho_Api\\Api\\WareHouseApi\\Reponsitories\\Implements\\IKhoRepository.cs",
-              "RelativeDocumentMoniker": "Reponsitories\\Implements\\IKhoRepository.cs",
-              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKho_Api\\Api\\WareHouseApi\\Reponsitories\\Implements\\IKhoRepository.cs",
-              "RelativeToolTip": "Reponsitories\\Implements\\IKhoRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T08:15:22.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\QLKho_Api\\Api\\WareHouseApi\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\QLKho_Api\\Api\\WareHouseApi\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAABEAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T08:15:12.511Z",
+              "WhenOpened": "2024-09-21T03:30:09.909Z",
               "EditorCaption": ""
             }
           ]
