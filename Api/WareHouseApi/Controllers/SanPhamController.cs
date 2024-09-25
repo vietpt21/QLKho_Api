@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Azure.Core;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WareHouse.Models.DTO;
 using WareHouseApi.Models.Domain;
 using WareHouseApi.Reponsitories.Implements;
@@ -18,9 +20,10 @@ namespace WareHouseApi.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllSanPham()
+        public IActionResult GetAllSanPham()
         {
-            var sanPhams = await _UnitWork.sanPhamRepository.GetAllAsync();
+            var sanPhams = _UnitWork.sanPhamRepository.GetAll(); 
+
             var response = sanPhams.Select(sp => new SanPhamDto
             {
                 id = sp.id,
@@ -44,16 +47,20 @@ namespace WareHouseApi.Controllers
                 ngay_tao = sp.ngay_tao,
                 ngay_cap_nhat = sp.ngay_cap_nhat,
                 nguoi_tao = sp.nguoi_tao,
-                nhom_san_pham_id = sp.nhom_san_pham_id
-            }).ToList();
+                nhom_san_pham_id= sp.nhom_san_pham_id,
+            }).ToList(); 
 
             return Ok(response);
         }
-
         [HttpPost]
-        public async Task<IActionResult> CreateSanPham([FromBody] SanPhamRequestDto request)
+        public IActionResult CreateSanPham([FromBody] SanPhamRequestDto request)
         {
-            var sanPham = new SanPham
+            var nhomsanpham = _UnitWork.nhomSanPhamRepository.GetByIdAsync(request.nhom_san_pham_id);
+            if (nhomsanpham == null)
+            {
+                return NotFound("Nhóm sản phẩm không tồn tại");
+            }
+            var sanpham = new SanPham
             {
                 ten_san_pham = request.ten_san_pham,
                 hien_thi = request.hien_thi,
@@ -72,180 +79,178 @@ namespace WareHouseApi.Controllers
                 sl_ton = request.sl_ton,
                 trang_thai = request.trang_thai,
                 ghi_chu = request.ghi_chu,
-                ngay_tao = DateTime.Now,
-                ngay_cap_nhat = DateTime.Now,
+                ngay_tao = request.ngay_tao,
+                ngay_cap_nhat = request.ngay_cap_nhat,
                 nguoi_tao = request.nguoi_tao,
-                nhom_san_pham_id = request.nhom_san_pham_id
+                nhom_san_pham_id = request.nhom_san_pham_id,
             };
+            _UnitWork.sanPhamRepository.Create(sanpham);
 
-            await _UnitWork.sanPhamRepository.CreateAsync(sanPham);
-
-            var response = new SanPhamDto
+            var sanPhamDto = new SanPhamDto
             {
-                id = sanPham.id,
-                ten_san_pham = sanPham.ten_san_pham,
-                hien_thi = sanPham.hien_thi,
-                hang_sx = sanPham.hang_sx,
-                hinh_anh = sanPham.hinh_anh,
-                dia_chi = sanPham.dia_chi,
-                thong_tin = sanPham.thong_tin,
-                han_su_dung = sanPham.han_su_dung,
-                quy_cach = sanPham.quy_cach,
-                dvt = sanPham.dvt,
-                gia_nhap = sanPham.gia_nhap,
-                sl_toi_thieu = sanPham.sl_toi_thieu,
-                sl_toi_da = sanPham.sl_toi_da,
-                sl_nhap = sanPham.sl_nhap,
-                sl_xuat = sanPham.sl_xuat,
-                sl_ton = sanPham.sl_ton,
-                trang_thai = sanPham.trang_thai,
-                ghi_chu = sanPham.ghi_chu,
-                ngay_tao = sanPham.ngay_tao,
-                ngay_cap_nhat = sanPham.ngay_cap_nhat,
-                nguoi_tao = sanPham.nguoi_tao,
-                nhom_san_pham_id = sanPham.nhom_san_pham_id
+                id = sanpham.id,
+                ten_san_pham = sanpham.ten_san_pham,
+                hien_thi = sanpham.hien_thi,
+                hang_sx = sanpham.hang_sx,
+                hinh_anh = sanpham.hinh_anh,
+                dia_chi = sanpham.dia_chi,
+                thong_tin = sanpham.thong_tin,
+                han_su_dung = sanpham.han_su_dung,
+                quy_cach = sanpham.quy_cach,
+                dvt = sanpham.dvt,
+                gia_nhap = sanpham.gia_nhap,
+                sl_toi_thieu = sanpham.sl_toi_thieu,
+                sl_toi_da = sanpham.sl_toi_da,
+                sl_nhap = sanpham.sl_nhap,
+                sl_xuat = sanpham.sl_xuat,
+                sl_ton = sanpham.sl_ton,
+                trang_thai = sanpham.trang_thai,
+                ghi_chu = sanpham.ghi_chu,
+                ngay_tao = sanpham.ngay_tao,
+                ngay_cap_nhat = sanpham.ngay_cap_nhat,
+                nguoi_tao = sanpham.nguoi_tao,
+                nhom_san_pham_id = sanpham.nhom_san_pham_id,
             };
 
-            return Ok(response);
+            return CreatedAtAction(nameof(GetSanPhamById), new { id = sanpham.id }, sanPhamDto);
         }
-
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetById(int id)
+        public IActionResult GetSanPhamById(int id)
         {
-            var sanPham = await _UnitWork.sanPhamRepository.GetByIdAsync(id);
-            if (sanPham == null)
+            var sanpham = _UnitWork.sanPhamRepository.GetById(id);
+            if (sanpham == null)
             {
                 return NotFound();
             }
 
-            var response = new SanPhamDto
+            var sanPhamDto = new SanPhamDto
             {
-                id = sanPham.id,
-                ten_san_pham = sanPham.ten_san_pham,
-                hien_thi = sanPham.hien_thi,
-                hang_sx = sanPham.hang_sx,
-                hinh_anh = sanPham.hinh_anh,
-                dia_chi = sanPham.dia_chi,
-                thong_tin = sanPham.thong_tin,
-                han_su_dung = sanPham.han_su_dung,
-                quy_cach = sanPham.quy_cach,
-                dvt = sanPham.dvt,
-                gia_nhap = sanPham.gia_nhap,
-                sl_toi_thieu = sanPham.sl_toi_thieu,
-                sl_toi_da = sanPham.sl_toi_da,
-                sl_nhap = sanPham.sl_nhap,
-                sl_xuat = sanPham.sl_xuat,
-                sl_ton = sanPham.sl_ton,
-                trang_thai = sanPham.trang_thai,
-                ghi_chu = sanPham.ghi_chu,
-                ngay_tao = sanPham.ngay_tao,
-                ngay_cap_nhat = sanPham.ngay_cap_nhat,
-                nguoi_tao = sanPham.nguoi_tao,
-                nhom_san_pham_id = sanPham.nhom_san_pham_id
+                id = sanpham.id,
+                ten_san_pham = sanpham.ten_san_pham,
+                hien_thi = sanpham.hien_thi,
+                hang_sx = sanpham.hang_sx,
+                hinh_anh = sanpham.hinh_anh,
+                dia_chi = sanpham.dia_chi,
+                thong_tin = sanpham.thong_tin,
+                han_su_dung = sanpham.han_su_dung,
+                quy_cach = sanpham.quy_cach,
+                dvt = sanpham.dvt,
+                gia_nhap = sanpham.gia_nhap,
+                sl_toi_thieu = sanpham.sl_toi_thieu,
+                sl_toi_da = sanpham.sl_toi_da,
+                sl_nhap = sanpham.sl_nhap,
+                sl_xuat = sanpham.sl_xuat,
+                sl_ton = sanpham.sl_ton,
+                trang_thai = sanpham.trang_thai,
+                ghi_chu = sanpham.ghi_chu,
+                ngay_tao = sanpham.ngay_tao,
+                ngay_cap_nhat = sanpham.ngay_cap_nhat,
+                nguoi_tao = sanpham.nguoi_tao,
+                nhom_san_pham_id= sanpham.nhom_san_pham_id,
             };
 
-            return Ok(response);
+            return Ok(sanPhamDto);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] SanPhamRequestDto request)
+        public IActionResult UpdateSanPham(int id, [FromBody] SanPhamRequestDto request)
         {
-            var sanPham = new SanPham
-            {
-                id = id,
-                ten_san_pham = request.ten_san_pham,
-                hien_thi = request.hien_thi,
-                hang_sx = request.hang_sx,
-                hinh_anh = request.hinh_anh,
-                dia_chi = request.dia_chi,
-                thong_tin = request.thong_tin,
-                han_su_dung = request.han_su_dung,
-                quy_cach = request.quy_cach,
-                dvt = request.dvt,
-                gia_nhap = request.gia_nhap,
-                sl_toi_thieu = request.sl_toi_thieu,
-                sl_toi_da = request.sl_toi_da,
-                sl_nhap = request.sl_nhap,
-                sl_xuat = request.sl_xuat,
-                sl_ton = request.sl_ton,
-                trang_thai = request.trang_thai,
-                ghi_chu = request.ghi_chu,
-                ngay_cap_nhat = DateTime.Now,
-                nguoi_tao = request.nguoi_tao,
-                nhom_san_pham_id = request.nhom_san_pham_id
-            };
 
-            var updatedSanPham = await _UnitWork.sanPhamRepository.UpdateAsync(sanPham);
-            if (updatedSanPham == null)
+            var existingSanPham = _UnitWork.sanPhamRepository.GetById(id);
+            if (existingSanPham == null)
             {
-                return NotFound();
+                return NotFound("Sản phẩm không tồn tại");
             }
 
-            var response = new SanPhamDto
+            existingSanPham.ten_san_pham = request.ten_san_pham;
+            existingSanPham.hien_thi = request.hien_thi;
+            existingSanPham.hang_sx = request.hang_sx;
+            existingSanPham.hinh_anh = request.hinh_anh;
+            existingSanPham.dia_chi = request.dia_chi;
+            existingSanPham.thong_tin = request.thong_tin;
+            existingSanPham.han_su_dung = request.han_su_dung;
+            existingSanPham.quy_cach = request.quy_cach;
+            existingSanPham.dvt = request.dvt;
+            existingSanPham.gia_nhap = request.gia_nhap;
+            existingSanPham.sl_toi_thieu = request.sl_toi_thieu;
+            existingSanPham.sl_toi_da = request.sl_toi_da;
+            existingSanPham.sl_nhap = request.sl_nhap;
+            existingSanPham.sl_xuat = request.sl_xuat;
+            existingSanPham.sl_ton = request.sl_ton;
+            existingSanPham.trang_thai = request.trang_thai;
+            existingSanPham.ghi_chu = request.ghi_chu;
+            existingSanPham.ngay_cap_nhat = DateTime.Now;
+            existingSanPham.nhom_san_pham_id = request.nhom_san_pham_id;
+            existingSanPham.nguoi_tao = request.nguoi_tao;
+            existingSanPham.ngay_tao = request.ngay_tao;
+         
+            _UnitWork.sanPhamRepository.Update(existingSanPham);
+            var sanPhamDto = new SanPhamDto
             {
-                id = updatedSanPham.id,
-                ten_san_pham = updatedSanPham.ten_san_pham,
-                hien_thi = updatedSanPham.hien_thi,
-                hang_sx = updatedSanPham.hang_sx,
-                hinh_anh = updatedSanPham.hinh_anh,
-                dia_chi = updatedSanPham.dia_chi,
-                thong_tin = updatedSanPham.thong_tin,
-                han_su_dung = updatedSanPham.han_su_dung,
-                quy_cach = updatedSanPham.quy_cach,
-                dvt = updatedSanPham.dvt,
-                gia_nhap = updatedSanPham.gia_nhap,
-                sl_toi_thieu = updatedSanPham.sl_toi_thieu,
-                sl_toi_da = updatedSanPham.sl_toi_da,
-                sl_nhap = updatedSanPham.sl_nhap,
-                sl_xuat = updatedSanPham.sl_xuat,
-                sl_ton = updatedSanPham.sl_ton,
-                trang_thai = updatedSanPham.trang_thai,
-                ghi_chu = updatedSanPham.ghi_chu,
-                ngay_tao = updatedSanPham.ngay_tao,
-                ngay_cap_nhat = updatedSanPham.ngay_cap_nhat,
-                nguoi_tao = updatedSanPham.nguoi_tao,
-                nhom_san_pham_id = updatedSanPham.nhom_san_pham_id
+                id = existingSanPham.id,
+                ten_san_pham = existingSanPham.ten_san_pham,
+                hien_thi = existingSanPham.hien_thi,
+                hang_sx = existingSanPham.hang_sx,
+                hinh_anh = existingSanPham.hinh_anh,
+                dia_chi = existingSanPham.dia_chi,
+                thong_tin = existingSanPham.thong_tin,
+                han_su_dung = existingSanPham.han_su_dung,
+                quy_cach = existingSanPham.quy_cach,
+                dvt = existingSanPham.dvt,
+                gia_nhap = existingSanPham.gia_nhap,
+                sl_toi_thieu = existingSanPham.sl_toi_thieu,
+                sl_toi_da = existingSanPham.sl_toi_da,
+                sl_nhap = existingSanPham.sl_nhap,
+                sl_xuat = existingSanPham.sl_xuat,
+                sl_ton = existingSanPham.sl_ton,
+                trang_thai = existingSanPham.trang_thai,
+                ghi_chu = existingSanPham.ghi_chu,
+                ngay_tao = existingSanPham.ngay_tao,
+                ngay_cap_nhat = existingSanPham.ngay_cap_nhat,
+                nguoi_tao = existingSanPham.nguoi_tao,
+                nhom_san_pham_id= existingSanPham.nhom_san_pham_id,
             };
-
-            return Ok(response);
+            return Ok(sanPhamDto);
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(int id)
+        public IActionResult DeleteSanPham(int id)
         {
-            var sanPham = await _UnitWork.sanPhamRepository.DeleteAsync(id);
-            if (sanPham == null)
+            var existingSanPham = _UnitWork.sanPhamRepository.GetById(id);
+            if (existingSanPham == null)
             {
-                return NotFound();
+                return NotFound("Sản phẩm không tồn tại");
             }
 
-            var response = new SanPhamDto
+            _UnitWork.sanPhamRepository.Delete(id);
+            var sanPhamDto = new SanPhamDto
             {
-                id = sanPham.id,
-                ten_san_pham = sanPham.ten_san_pham,
-                hien_thi = sanPham.hien_thi,
-                hang_sx = sanPham.hang_sx,
-                hinh_anh = sanPham.hinh_anh,
-                dia_chi = sanPham.dia_chi,
-                thong_tin = sanPham.thong_tin,
-                han_su_dung = sanPham.han_su_dung,
-                quy_cach = sanPham.quy_cach,
-                dvt = sanPham.dvt,
-                gia_nhap = sanPham.gia_nhap,
-                sl_toi_thieu = sanPham.sl_toi_thieu,
-                sl_toi_da = sanPham.sl_toi_da,
-                sl_nhap = sanPham.sl_nhap,
-                sl_xuat = sanPham.sl_xuat,
-                sl_ton = sanPham.sl_ton,
-                trang_thai = sanPham.trang_thai,
-                ghi_chu = sanPham.ghi_chu,
-                ngay_tao = sanPham.ngay_tao,
-                ngay_cap_nhat = sanPham.ngay_cap_nhat,
-                nguoi_tao = sanPham.nguoi_tao,
-                nhom_san_pham_id = sanPham.nhom_san_pham_id
+                id = existingSanPham.id,
+                ten_san_pham = existingSanPham.ten_san_pham,
+                hien_thi = existingSanPham.hien_thi,
+                hang_sx = existingSanPham.hang_sx,
+                hinh_anh = existingSanPham.hinh_anh,
+                dia_chi = existingSanPham.dia_chi,
+                thong_tin = existingSanPham.thong_tin,
+                han_su_dung = existingSanPham.han_su_dung,
+                quy_cach = existingSanPham.quy_cach,
+                dvt = existingSanPham.dvt,
+                gia_nhap = existingSanPham.gia_nhap,
+                sl_toi_thieu = existingSanPham.sl_toi_thieu,
+                sl_toi_da = existingSanPham.sl_toi_da,
+                sl_nhap = existingSanPham.sl_nhap,
+                sl_xuat = existingSanPham.sl_xuat,
+                sl_ton = existingSanPham.sl_ton,
+                trang_thai = existingSanPham.trang_thai,
+                ghi_chu = existingSanPham.ghi_chu,
+                ngay_tao = existingSanPham.ngay_tao,
+                ngay_cap_nhat = existingSanPham.ngay_cap_nhat,
+                nguoi_tao = existingSanPham.nguoi_tao,
+                nhom_san_pham_id = existingSanPham.nhom_san_pham_id,
             };
-
-            return Ok(response);
+            return Ok(sanPhamDto);
+          
         }
+
     }
 }

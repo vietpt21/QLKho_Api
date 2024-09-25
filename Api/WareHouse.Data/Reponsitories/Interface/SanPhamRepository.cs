@@ -9,16 +9,18 @@ namespace WareHouseApi.Reponsitories.Interface
     public class SanPhamRepository : ISanPhamRepository
     {
         private readonly ApplicationDbContext dbContext;
+
         public SanPhamRepository(ApplicationDbContext dbContext)
         {
             this.dbContext = dbContext;
         }
-        public async Task<SanPham> CreateAsync(SanPham sanPham)
+
+        public SanPham Create(SanPham sanPham)
         {
             try
             {
                 dbContext.san_pham.Add(sanPham);
-                await dbContext.SaveChangesAsync();
+                dbContext.SaveChanges();
                 return sanPham;
             }
             catch (Exception ex)
@@ -27,9 +29,10 @@ namespace WareHouseApi.Reponsitories.Interface
                 return null;
             }
         }
-        public async Task<SanPham> DeleteAsync(int id)
+
+        public SanPham Delete(int id)
         {
-            var existing = await dbContext.san_pham.FirstOrDefaultAsync(x => x.id == id);
+            var existing = dbContext.san_pham.FirstOrDefault(x => x.id == id);
 
             if (existing is null)
             {
@@ -37,14 +40,15 @@ namespace WareHouseApi.Reponsitories.Interface
             }
 
             dbContext.san_pham.Remove(existing);
-            await dbContext.SaveChangesAsync();
+            dbContext.SaveChanges(); // Gọi SaveChanges đồng bộ
             return existing;
         }
-        public async Task<IEnumerable<SanPham>> GetAllAsync()
+
+        public IEnumerable<SanPham> GetAll()
         {
             try
             {
-                return await dbContext.san_pham.Include(x=>x.NhomSanPhams).ToListAsync();
+                return dbContext.san_pham.Include(x => x.NhomSanPham).ToList(); // Gọi ToList đồng bộ
             }
             catch (Exception ex)
             {
@@ -52,26 +56,26 @@ namespace WareHouseApi.Reponsitories.Interface
                 return Enumerable.Empty<SanPham>();
             }
         }
-        public async Task<SanPham> GetByIdAsync(int id)
+
+        public SanPham GetById(int id)
         {
-            return await dbContext.san_pham.Include(x => x.NhomSanPhams).FirstOrDefaultAsync(x => x.id == id);
+            return dbContext.san_pham.Include(x => x.NhomSanPham).FirstOrDefault(x => x.id == id); // Gọi FirstOrDefault đồng bộ
         }
 
-        public async Task<SanPham> UpdateAsync(SanPham sanPham)
+        public SanPham Update(SanPham sanPham)
         {
-            var existing = await dbContext.san_pham.Include(x => x.NhomSanPhams).FirstOrDefaultAsync(x => x.id == sanPham.id);
+            var existing = dbContext.san_pham.Include(x => x.NhomSanPham).FirstOrDefault(x => x.id == sanPham.id);
             if (existing == null)
             {
                 return null;
             }
             dbContext.Entry(existing).CurrentValues.SetValues(sanPham);
-            existing.NhomSanPhams = sanPham.NhomSanPhams;
+            existing.NhomSanPham = sanPham.NhomSanPham;
 
-            await dbContext.SaveChangesAsync();
+            dbContext.SaveChanges(); // Gọi SaveChanges đồng bộ
 
             return sanPham;
-
-
         }
     }
+
 }

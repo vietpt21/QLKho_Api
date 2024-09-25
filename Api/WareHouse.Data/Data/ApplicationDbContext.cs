@@ -12,7 +12,5 @@ namespace WareHouseApi.Data
         public DbSet<NhaCC> ncc { get; set; }
         public DbSet<NhomSanPham> nhom_san_pham { get; set; }
         public DbSet<SanPham> san_pham { get; set; }
-        
-      
     }
 }

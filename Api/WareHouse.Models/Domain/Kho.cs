@@ -1,4 +1,11 @@
-﻿namespace WareHouseApi.Models.Domain
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WareHouseApi.Models.Domain
 {
     public class Kho
     {
@@ -9,5 +16,6 @@
         public string nguoi_tao { get; set; }
         public DateTime ngay_tao { get; set; }
         public DateTime cap_nhat { get; set; }
+       
     }
 }

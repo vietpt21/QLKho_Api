@@ -1,7 +1,18 @@
-﻿namespace WareHouseApi.Models.Domain
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data;
+using System.Linq;
+using System.Runtime.Serialization.Formatters;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WareHouseApi.Models.Domain
 {
     public class SanPham
     {
+     
         public int id { get; set; }
         public string ten_san_pham { get; set; }
         public string hien_thi { get; set; }
@@ -24,6 +35,8 @@
         public DateTime ngay_cap_nhat { get; set; }
         public string nguoi_tao { get; set; }
         public int nhom_san_pham_id { get; set; }
-        public ICollection<NhomSanPham> NhomSanPhams { get; set; }
+        [ForeignKey("nhom_san_pham_id")]
+        public NhomSanPham NhomSanPham { get; set; }
+       
     }
 }

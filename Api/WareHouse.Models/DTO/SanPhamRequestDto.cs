@@ -29,5 +29,6 @@ namespace WareHouse.Models.DTO
         public DateTime ngay_cap_nhat { get; set; }
         public string nguoi_tao { get; set; }
         public int nhom_san_pham_id { get; set; }
+       
     }
 }

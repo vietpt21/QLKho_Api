@@ -57,7 +57,7 @@ namespace WareHouseApi.Reponsitories.Interface
             return await dbContext.kho.FirstOrDefaultAsync(x => x.id == id);
         }
 
-        public async Task<Kho> UpdateKhoAsync(Kho kho)
+        public async Task<Kho> UpdateAsync(Kho kho)
         {
             var existing = await dbContext.kho.FirstOrDefaultAsync(x => x.id == kho.id);
 
