@@ -10,6 +10,6 @@ namespace WareHouse.Models.DTO
     {
         public int id { get; set; }
         public string loai_san_pham { get; set; }
-        /*public List<SanPhamDto> Sanphams { get; set; } = new List<SanPhamDto>();*/
+       
     }
 }

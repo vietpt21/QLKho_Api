@@ -11,6 +11,9 @@ namespace WareHouseApi.Reponsitories.Interface
         public INCCRepository nccRepository { get; private set; }
         public INhomSanPhamRepository nhomSanPhamRepository { get; private set; }
         public ISanPhamRepository sanPhamRepository { get; private set; }
+        public INhapKhoRepository nhapKhoRepository { get; private set; }
+        public INhapKhoCTRepository nhapKhoCTRepository { get; private set; }
+        public IXuatKhoRepository xuatKhoRepository { get; private set; }
         public UnitWork(ApplicationDbContext db)
         {
             _db = db;
@@ -18,7 +21,9 @@ namespace WareHouseApi.Reponsitories.Interface
             nccRepository = new NCCRepository(_db);
             nhomSanPhamRepository = new NhomSanPhamRepository(_db);
             sanPhamRepository = new SanPhamRepository(_db);
-          
+            nhapKhoRepository = new NhapKhoRepository(_db);
+            nhapKhoCTRepository = new NhapKhoCTRepository(_db);
+            xuatKhoRepository = new XuatKhoRepository(_db);
         }
     }
 }

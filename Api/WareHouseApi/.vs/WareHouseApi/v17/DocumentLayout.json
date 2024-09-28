@@ -1,12 +1,181 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouseApi\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FCE8804-2AE6-4F08-90DC-84A3CFCEF7CD}|..\\WareHouse.Data\\WareHouse.Data.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.data\\reponsitories\\interface\\unitwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FCE8804-2AE6-4F08-90DC-84A3CFCEF7CD}|..\\WareHouse.Data\\WareHouse.Data.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.data\\reponsitories\\implements\\iunitwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FCE8804-2AE6-4F08-90DC-84A3CFCEF7CD}|..\\WareHouse.Data\\WareHouse.Data.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.data\\reponsitories\\interface\\xuatkhorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FCE8804-2AE6-4F08-90DC-84A3CFCEF7CD}|..\\WareHouse.Data\\WareHouse.Data.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.data\\reponsitories\\implements\\ixuatkhorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouseapi\\controllers\\nhapkhocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7543E45-456E-4BF3-9600-A1656AE610BC}|WareHouseApi.csproj|solutionrelative:controllers\\nhapkhocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81FAC2D5-D9AC-455C-88EA-75A3A28BB897}|..\\WareHouse.Models\\WareHouse.Models.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.models\\domain\\nhapkhoct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81FAC2D5-D9AC-455C-88EA-75A3A28BB897}|..\\WareHouse.Models\\WareHouse.Models.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.models\\domain\\nhapkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FCE8804-2AE6-4F08-90DC-84A3CFCEF7CD}|..\\WareHouse.Data\\WareHouse.Data.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.data\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81FAC2D5-D9AC-455C-88EA-75A3A28BB897}|..\\WareHouse.Models\\WareHouse.Models.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.models\\domain\\xuatkhoct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81FAC2D5-D9AC-455C-88EA-75A3A28BB897}|..\\WareHouse.Models\\WareHouse.Models.csproj|c:\\users\\vietpt\\desktop\\new folder\\qlkho_api\\api\\warehouse.models\\domain\\xuatkho.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UnitWork.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Interface\\UnitWork.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Data\\Reponsitories\\Interface\\UnitWork.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Interface\\UnitWork.cs",
+              "RelativeToolTip": "..\\WareHouse.Data\\Reponsitories\\Interface\\UnitWork.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T08:18:14.963Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUnitWork.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Implements\\IUnitWork.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Data\\Reponsitories\\Implements\\IUnitWork.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Implements\\IUnitWork.cs",
+              "RelativeToolTip": "..\\WareHouse.Data\\Reponsitories\\Implements\\IUnitWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T08:17:36.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "XuatKhoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Interface\\XuatKhoRepository.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Data\\Reponsitories\\Interface\\XuatKhoRepository.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Interface\\XuatKhoRepository.cs",
+              "RelativeToolTip": "..\\WareHouse.Data\\Reponsitories\\Interface\\XuatKhoRepository.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAIwH4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T08:14:47.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IXuatKhoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Implements\\IXuatKhoRepository.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Data\\Reponsitories\\Implements\\IXuatKhoRepository.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Reponsitories\\Implements\\IXuatKhoRepository.cs",
+              "RelativeToolTip": "..\\WareHouse.Data\\Reponsitories\\Implements\\IXuatKhoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T08:14:01.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NhapKhoController.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouseApi\\Controllers\\NhapKhoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NhapKhoController.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouseApi\\Controllers\\NhapKhoController.cs",
+              "RelativeToolTip": "Controllers\\NhapKhoController.cs",
+              "ViewState": "AQIAAIMAAAAAAAAAAAAUwKUAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T09:40:38.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Data\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Data\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\WareHouse.Data\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T09:33:18.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "XuatKhoCT.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\Domain\\XuatKhoCT.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Models\\Domain\\XuatKhoCT.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\Domain\\XuatKhoCT.cs",
+              "RelativeToolTip": "..\\WareHouse.Models\\Domain\\XuatKhoCT.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T09:31:16.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "XuatKho.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\Domain\\XuatKho.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Models\\Domain\\XuatKho.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\Domain\\XuatKho.cs",
+              "RelativeToolTip": "..\\WareHouse.Models\\Domain\\XuatKho.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T09:31:15.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NhapKhoCT.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\Domain\\NhapKhoCT.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Models\\Domain\\NhapKhoCT.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\Domain\\NhapKhoCT.cs",
+              "RelativeToolTip": "..\\WareHouse.Models\\Domain\\NhapKhoCT.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T09:31:13.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NhapKho.cs",
+              "DocumentMoniker": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\Domain\\NhapKho.cs",
+              "RelativeDocumentMoniker": "..\\WareHouse.Models\\Domain\\NhapKho.cs",
+              "ToolTip": "C:\\Users\\VIETPT\\Desktop\\New folder\\QLKho_Api\\Api\\WareHouse.Models\\Domain\\NhapKho.cs",
+              "RelativeToolTip": "..\\WareHouse.Models\\Domain\\NhapKho.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T09:31:08.587Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

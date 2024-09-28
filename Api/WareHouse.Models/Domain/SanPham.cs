@@ -7,12 +7,12 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters;
 using System.Text;
 using System.Threading.Tasks;
+using WareHouse.Models.Domain;
 
 namespace WareHouseApi.Models.Domain
 {
     public class SanPham
     {
-     
         public int id { get; set; }
         public string ten_san_pham { get; set; }
         public string hien_thi { get; set; }
@@ -37,6 +37,7 @@ namespace WareHouseApi.Models.Domain
         public int nhom_san_pham_id { get; set; }
         [ForeignKey("nhom_san_pham_id")]
         public NhomSanPham NhomSanPham { get; set; }
-       
+        public ICollection<NhapKhoCT> NhapKhoCTs { get; } = new List<NhapKhoCT>();
+
     }
 }

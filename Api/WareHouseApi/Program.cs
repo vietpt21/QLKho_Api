@@ -16,6 +16,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CodePulseConnectionString"));
 });
 builder.Services.AddScoped<IUnitWork, UnitWork>();
+builder.Services.AddScoped<ISanPhamRepository, SanPhamRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

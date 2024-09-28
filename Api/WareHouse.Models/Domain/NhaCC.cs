@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WareHouse.Models.Domain;
 
 namespace WareHouseApi.Models.Domain
 {
@@ -23,6 +24,7 @@ namespace WareHouseApi.Models.Domain
         public string ghi_chu { get; set; }
         public DateTime ngay_tao { get; set; }
         public DateTime ngay_cap_nhat { get; set; }
-   
+        public ICollection<NhapKho> NhapKhos { get; } = new List<NhapKho>();
+
     }
 }

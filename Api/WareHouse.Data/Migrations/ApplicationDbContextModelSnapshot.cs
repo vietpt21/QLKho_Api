@@ -22,6 +22,271 @@ namespace WareHouse.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("WareHouse.Models.Domain.NhapKho", b =>
+                {
+                    b.Property<string>("id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("kho_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("loai_nhap")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ncc_id")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("ngay_cap_nhat")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ngay_nhap")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ngay_tao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("nguoi_giao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nguoi_tao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("noi_dung_nhap")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("sl_nhap")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("kho_id");
+
+                    b.HasIndex("ncc_id");
+
+                    b.ToTable("nhap_kho");
+                });
+
+            modelBuilder.Entity("WareHouse.Models.Domain.NhapKhoCT", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("dvt")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ghi_chu")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<float>("gia_nhap")
+                        .HasColumnType("real");
+
+                    b.Property<DateTime>("han_su_dung")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("hang_sx")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("hinh_anh")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ngay_cap_nhat")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ngay_het_han")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ngay_nhap")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ngay_tao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("nguoi_tao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nhap_kho_id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("nhom_san_pham")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("quy_cach")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("san_pham_id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("sl_nhap")
+                        .HasColumnType("int");
+
+                    b.Property<int>("sl_ton")
+                        .HasColumnType("int");
+
+                    b.Property<int>("sl_xuat")
+                        .HasColumnType("int");
+
+                    b.Property<string>("so_lo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("thong_tin")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("nhap_kho_id");
+
+                    b.HasIndex("san_pham_id");
+
+                    b.ToTable("nhap_kho_ct");
+                });
+
+            modelBuilder.Entity("WareHouse.Models.Domain.XuatKho", b =>
+                {
+                    b.Property<string>("id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ghi_chu")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("loat_xuat")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ma_hoa_don")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ngay_cap_nhat")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ngay_tao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ngay_xuat")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("nguoi_tao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("nhan_vien_id")
+                        .HasColumnType("int");
+
+                    b.Property<string>("noi_dung_xuat")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("sl_san_pham")
+                        .HasColumnType("int");
+
+                    b.Property<int>("sl_xuat")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.ToTable("xuat_kho");
+                });
+
+            modelBuilder.Entity("WareHouse.Models.Domain.XuatKhoCT", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<string>("LoaiXuat")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("dvt")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("hang_sx")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("hinh_anh")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ngay_cap_nhat")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ngay_het_han")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ngay_tao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("ngay_xuat")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("nguoi_tao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nhom_san_pham")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("quy_cach")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("san_pham_id")
+                        .HasColumnType("int");
+
+                    b.Property<int>("sl_xuat")
+                        .HasColumnType("int");
+
+                    b.Property<int>("sl_xuat_tong")
+                        .HasColumnType("int");
+
+                    b.Property<string>("so_lo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ten_san_pham")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("thong_tin")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("xuat_kho_id")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("san_pham_id");
+
+                    b.HasIndex("xuat_kho_id");
+
+                    b.ToTable("xuat_kho_ct");
+                });
+
             modelBuilder.Entity("WareHouseApi.Models.Domain.Kho", b =>
                 {
                     b.Property<int>("id")
@@ -222,6 +487,63 @@ namespace WareHouse.Data.Migrations
                     b.ToTable("san_pham");
                 });
 
+            modelBuilder.Entity("WareHouse.Models.Domain.NhapKho", b =>
+                {
+                    b.HasOne("WareHouseApi.Models.Domain.Kho", "Kho")
+                        .WithMany("NhapKhos")
+                        .HasForeignKey("kho_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WareHouseApi.Models.Domain.NhaCC", "Ncc")
+                        .WithMany("NhapKhos")
+                        .HasForeignKey("ncc_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Kho");
+
+                    b.Navigation("Ncc");
+                });
+
+            modelBuilder.Entity("WareHouse.Models.Domain.NhapKhoCT", b =>
+                {
+                    b.HasOne("WareHouse.Models.Domain.NhapKho", "NhapKho")
+                        .WithMany("NhapKhoCTs")
+                        .HasForeignKey("nhap_kho_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WareHouseApi.Models.Domain.SanPham", "SanPham")
+                        .WithMany("NhapKhoCTs")
+                        .HasForeignKey("san_pham_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("NhapKho");
+
+                    b.Navigation("SanPham");
+                });
+
+            modelBuilder.Entity("WareHouse.Models.Domain.XuatKhoCT", b =>
+                {
+                    b.HasOne("WareHouseApi.Models.Domain.SanPham", "SanPham")
+                        .WithMany()
+                        .HasForeignKey("san_pham_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WareHouse.Models.Domain.XuatKho", "XuatKho")
+                        .WithMany("xuatKhoCTs")
+                        .HasForeignKey("xuat_kho_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("SanPham");
+
+                    b.Navigation("XuatKho");
+                });
+
             modelBuilder.Entity("WareHouseApi.Models.Domain.SanPham", b =>
                 {
                     b.HasOne("WareHouseApi.Models.Domain.NhomSanPham", "NhomSanPham")
@@ -233,9 +555,34 @@ namespace WareHouse.Data.Migrations
                     b.Navigation("NhomSanPham");
                 });
 
+            modelBuilder.Entity("WareHouse.Models.Domain.NhapKho", b =>
+                {
+                    b.Navigation("NhapKhoCTs");
+                });
+
+            modelBuilder.Entity("WareHouse.Models.Domain.XuatKho", b =>
+                {
+                    b.Navigation("xuatKhoCTs");
+                });
+
+            modelBuilder.Entity("WareHouseApi.Models.Domain.Kho", b =>
+                {
+                    b.Navigation("NhapKhos");
+                });
+
+            modelBuilder.Entity("WareHouseApi.Models.Domain.NhaCC", b =>
+                {
+                    b.Navigation("NhapKhos");
+                });
+
             modelBuilder.Entity("WareHouseApi.Models.Domain.NhomSanPham", b =>
                 {
                     b.Navigation("SanPhams");
+                });
+
+            modelBuilder.Entity("WareHouseApi.Models.Domain.SanPham", b =>
+                {
+                    b.Navigation("NhapKhoCTs");
                 });
 #pragma warning restore 612, 618
         }

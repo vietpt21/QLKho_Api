@@ -15,12 +15,12 @@ namespace WareHouseApi.Reponsitories.Interface
             this.dbContext = dbContext;
         }
 
-        public SanPham Create(SanPham sanPham)
+        public async Task<SanPham> Create(SanPham sanPham)
         {
             try
             {
                 dbContext.san_pham.Add(sanPham);
-                dbContext.SaveChanges();
+                await dbContext.SaveChangesAsync();
                 return sanPham;
             }
             catch (Exception ex)
@@ -30,9 +30,9 @@ namespace WareHouseApi.Reponsitories.Interface
             }
         }
 
-        public SanPham Delete(int id)
+        public async Task<SanPham> Delete(int id)
         {
-            var existing = dbContext.san_pham.FirstOrDefault(x => x.id == id);
+            var existing = await dbContext.san_pham.FirstOrDefaultAsync(x => x.id == id);
 
             if (existing is null)
             {
@@ -40,15 +40,15 @@ namespace WareHouseApi.Reponsitories.Interface
             }
 
             dbContext.san_pham.Remove(existing);
-            dbContext.SaveChanges(); // Gọi SaveChanges đồng bộ
+            await dbContext.SaveChangesAsync();
             return existing;
         }
 
-        public IEnumerable<SanPham> GetAll()
+        public async Task<IEnumerable<SanPham>> GetAll()
         {
             try
             {
-                return dbContext.san_pham.Include(x => x.NhomSanPham).ToList(); // Gọi ToList đồng bộ
+                return await dbContext.san_pham.Include(x => x.NhomSanPham).ToListAsync();
             }
             catch (Exception ex)
             {
@@ -57,25 +57,23 @@ namespace WareHouseApi.Reponsitories.Interface
             }
         }
 
-        public SanPham GetById(int id)
+        public async Task<SanPham> GetById(int id)
         {
-            return dbContext.san_pham.Include(x => x.NhomSanPham).FirstOrDefault(x => x.id == id); // Gọi FirstOrDefault đồng bộ
+            return await dbContext.san_pham.FirstOrDefaultAsync(x => x.id == id);
         }
-
-        public SanPham Update(SanPham sanPham)
+        public async Task<SanPham> Update(SanPham sanPham)
         {
-            var existing = dbContext.san_pham.Include(x => x.NhomSanPham).FirstOrDefault(x => x.id == sanPham.id);
+            var existing = await dbContext.san_pham.FirstOrDefaultAsync(x => x.id == sanPham.id);
             if (existing == null)
             {
                 return null;
             }
             dbContext.Entry(existing).CurrentValues.SetValues(sanPham);
-            existing.NhomSanPham = sanPham.NhomSanPham;
 
-            dbContext.SaveChanges(); // Gọi SaveChanges đồng bộ
-
-            return sanPham;
+            await dbContext.SaveChangesAsync();
+            return existing;
         }
+
     }
 
 }
