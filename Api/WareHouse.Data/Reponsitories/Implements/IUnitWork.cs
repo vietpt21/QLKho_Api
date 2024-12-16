@@ -9,5 +9,6 @@
         INhapKhoRepository nhapKhoRepository { get; }
         INhapKhoCTRepository nhapKhoCTRepository { get; }
         IXuatKhoRepository xuatKhoRepository { get; }
+        IXuatKhoCTRepository xuatKhoCTRepository { get; }
     }
 }

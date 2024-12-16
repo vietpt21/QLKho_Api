@@ -14,8 +14,6 @@ namespace WareHouseApi.Controllers
     public class NhapKhoController : ControllerBase
     {
         private readonly IUnitWork _UnitWork;
-
-
         public NhapKhoController(IUnitWork UnitWork)
         {
             _UnitWork = UnitWork;
@@ -103,7 +101,7 @@ namespace WareHouseApi.Controllers
                         ngay_cap_nhat = DateTime.Now,
                         nguoi_tao = request.nguoi_tao
                     };
-
+                    
                     await _UnitWork.nhapKhoCTRepository.Create(nhapKhoCT);
                     var sanpham = await _UnitWork.sanPhamRepository.GetById(nhapKhoCT.san_pham_id);
                     if (sanpham != null)

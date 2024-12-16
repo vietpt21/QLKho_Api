@@ -5,11 +5,11 @@ namespace WareHouseApi.Reponsitories.Implements
 {
     public interface IXuatKhoRepository
     {
-        Task<IEnumerable<NhapKho>> GetAll(); 
-        Task<NhapKho> Create(NhapKho nhapKho);
-        Task<NhapKho> Update(NhapKho nhapKho);
-        Task<NhapKho> Delete(string id);
-        Task<NhapKho> GetById(string id);
+        Task<IEnumerable<XuatKho>> GetAll(); 
+        Task<XuatKho> Create(XuatKho xuatKho);
+        Task<XuatKho> Update(XuatKho xuatKho);
+        Task<XuatKho> Delete(string id);
+        Task<XuatKho> GetById(string id);
         Task<string> GenIdXuatKho();
     }
 }

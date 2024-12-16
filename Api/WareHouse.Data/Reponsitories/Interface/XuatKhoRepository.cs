@@ -55,7 +55,7 @@ namespace WareHouseApi.Reponsitories.Interface
             return lastId;
         }
 
-        public async Task<string> GenIdNhapKho()
+        public async Task<string> GenIdXuatKho()
         {
             string idOld = await GetXuatKhoDescAsync();
             string prefix = "NKH";
