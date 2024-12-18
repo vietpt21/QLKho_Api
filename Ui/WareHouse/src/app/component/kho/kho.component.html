@@ -1,0 +1,35 @@
+<div class="container">
+    <h2>Danh sách Kho</h2>
+    
+    <table class="table table-bordered" id="khoTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tên kho</th>
+          <th>Hiển thị</th>
+          <th>Ghi chú</th>
+          <th>Người tạo</th>
+          <th>Ngày tao</th>
+          <th>Ngày cập nhật</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let kho of khoData">
+          <td>{{ kho.id }}</td>
+          <td>{{ kho.ten_kho }}</td>
+          <td>{{ kho.hien_thi }}</td>
+          <td>{{ kho.ghi_chu }}</td>
+          <td>{{ kho.nguoi_tao }}</td>
+          <td>{{ kho.ngay_tao }}</td>
+          <td>{{ kho.cap_nhat }}</td>
+          <td>
+            <button class="btn btn-warning" (click)="(kho.id)">Sửa</button>
+            <button class="btn btn-danger" (click)="(kho.id)">Xóa</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+
